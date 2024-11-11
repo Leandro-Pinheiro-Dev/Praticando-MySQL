@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Tintas - Cadastro e Solicitações</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Banco de Tintas - Cadastro e Solicitações</h1>
+
+        <h2>Cadastro de Usuário</h2>
+        <form id="formUsuario">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+
+            <label for="tipo">Tipo (Doador ou Beneficiário):</label>
+            <select id="tipo" name="tipo" required>
+                <option value="Doador">Doador</option>
+                <option value="Beneficiário">Beneficiário</option>
+            </select><br>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required><br>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required><br>
+
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" required><br>
+
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" required><br>
+
+            <label for="justificativa">Justificativa (se aplicável):</label>
+            <textarea id="justificativa" name="justificativa"></textarea><br>
+
+            <!-- Novo campo para senha -->
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required><br>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
